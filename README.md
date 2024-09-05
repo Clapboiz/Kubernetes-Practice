@@ -19,7 +19,8 @@ Some popular orchestration tools include:
 + AWS Step Functions: A serverless orchestration service for building distributed applications using AWS services.
 
 Orchestration tools are key components in DevOps and cloud-native environments, helping teams to efficiently manage complex, distributed systems.
-
+## KUBECTL
+![image](https://github.com/user-attachments/assets/6455d829-66e8-4fd7-98a2-07c8feeb4861)
 
 # NOTE
 In the context of Kubernetes, `---` is used to separate different resources in a YAML file.
