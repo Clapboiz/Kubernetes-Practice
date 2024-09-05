@@ -20,30 +20,5 @@ Some popular orchestration tools include:
 
 Orchestration tools are key components in DevOps and cloud-native environments, helping teams to efficiently manage complex, distributed systems.
 
-# SET UP
-Follow these step. 
-
-```
-kubectl apply -f mongo-config.yaml
-```
-
-```
-kubectl apply -f mongo-secret.yaml 
-```
-
-```
-kubectl apply -f mongo.yaml 
-```
-
-```
-kubectl apply -f webapp.yaml 
-```
-
-```
-kubectl get all
-```
-
-
-```
-minikube service webapp-service
-```
+# NOTE
+In the context of Kubernetes, `---` is used to separate different resources in a YAML file.
