@@ -19,3 +19,31 @@ Some popular orchestration tools include:
 + AWS Step Functions: A serverless orchestration service for building distributed applications using AWS services.
 
 Orchestration tools are key components in DevOps and cloud-native environments, helping teams to efficiently manage complex, distributed systems.
+
+# SET UP
+Follow these step. 
+
+```
+kubectl apply -f mongo-config.yaml
+```
+
+```
+kubectl apply -f mongo-secret.yaml 
+```
+
+```
+kubectl apply -f mongo.yaml 
+```
+
+```
+kubectl apply -f webapp.yaml 
+```
+
+```
+kubectl get all
+```
+
+
+```
+minikube service webapp-service
+```
