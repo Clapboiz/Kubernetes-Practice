@@ -20,5 +20,11 @@ Some popular orchestration tools include:
 
 Orchestration tools are key components in DevOps and cloud-native environments, helping teams to efficiently manage complex, distributed systems.
 
+
 # NOTE
 In the context of Kubernetes, `---` is used to separate different resources in a YAML file.
+
+ETCD is the `cluster brain`.
+
+Application data `is not` stored in etcd!
+
