@@ -72,3 +72,27 @@ Application data `is not` stored in etcd!
 - **Purpose**: Jobs manage the execution of short-lived tasks and ensure they complete successfully, while CronJobs schedule Jobs to run at specific times.
 - **When to Use**: Use Jobs for one-time tasks and CronJobs for scheduled, recurring tasks.
 
+# Core Kubernetes Namespaces
+
+In Kubernetes, there are four core namespaces that are created by default when a cluster is initialized. These namespaces provide logical separation and resource organization within the cluster.
+
+## 1. default
+- **Description**: This is the default namespace where resources (Pods, Services, etc.) are created if no specific namespace is specified.
+- **When to Use**: If you don’t require namespace segmentation or are working on simple test applications, resources will be created in the `default` namespace.
+
+## 2. kube-system
+- **Description**: This namespace contains resources related to Kubernetes control components, including critical services like `kube-dns`, `scheduler`, and `controller-manager`.
+- **When to Use**: You will rarely interact directly with this namespace, but it is essential as it houses the core components of the Kubernetes cluster.
+
+## 3. kube-public
+- **Description**: This namespace is publicly readable by all users, including unauthenticated users.
+- **When to Use**: It's typically used for storing publicly accessible information in the cluster, such as a default ConfigMap that holds cluster information.
+
+## 4. kube-node-lease
+- **Description**: This namespace contains "lease" objects associated with each node. These leases are used to track node health and improve the performance of node heartbeat detection.
+- **When to Use**: This is a system namespace that Kubernetes manages automatically for tracking nodes, and you won’t need to interact with it directly.
+
+---
+
+## Custom Namespaces
+In addition to these core namespaces, you can create custom namespaces to logically separate applications, environments (like `dev`, `staging`, `prod`), or teams. This helps in better resource management and isolation.
